@@ -1,0 +1,690 @@
+/* RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* ----------------------- */
+/* CLASES REUTILIZABLES */
+
+.border {
+    border: 1px solid black;
+}
+
+/* ----------------------- */
+
+/* START HEADER */
+@media (max-width: 376px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px;
+        background-color: #E8A698;
+    }
+}
+
+@media (min-width: 376px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px;
+        background-color: #E8A698;
+    }
+}
+
+@media (max-width: 376px) {
+    .header-logo {
+        width: 55px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 376px) {
+    .header-logo {
+        width: 55px;
+        height: 50px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 376px) {
+    .header-logo {
+        width: 55px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 376px) {
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 55px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 376px) {
+    .header-menu__barra {
+        width: 100%;
+        height: 10px;
+    
+        background-color: black;
+    }
+}
+
+@media (min-width: 376px) {
+    .header-menu__barra {
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 376px) {
+    .header-nav {
+        display: inherit;
+        margin-right: 72px;
+    }
+}
+@media (min-width: 376px) {
+    .header-nav__link {
+        padding-right: 25px;
+
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+    }
+}
+/* END HEADER */
+
+/* START MAIN: todas las secciones */
+@media (max-width: 376px) {
+    .main {
+        /* width: 100%; */
+        background-color: #FAFAFA;
+    }
+}
+/* END MAIN */
+
+/* START PRESENTACION */
+@media (max-width: 376px) {
+    .section-presentacion {
+        /* 594 todo el main - 22 - 538 de referencia del about me: x ahi anda... */
+        height: 572px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-presentacion {
+        /* 616 - header 50 - 18 de padding x 2 por ahi anda... */
+        height: 520px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+
+    }
+}
+
+@media (max-width: 376px) {
+    .section-presentacion__copy {
+        margin: 0;
+        padding: 0 42px;
+
+        /* 168 - 50 del header - 18 del padding del header  */
+        padding-top: 94px;
+
+        font-family: 'Open Sans';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-presentacion__copy {
+        width: 313px;
+        height: 96px;
+
+        margin: 260px 0;
+        margin-left: 80px;
+
+        font-family: 'Open Sans';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+
+    }
+}
+
+@media (max-width: 376px) {
+    .section-presentacion__img {
+        display: block;
+        margin: auto;
+        width: 318px;
+        height: 300px;
+        margin-top: 58px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-presentacion__img {
+        display: block;
+        margin: auto;
+        width: 435px;
+        height: 395px;
+        margin-right: 84px;
+        margin-top: 118px;
+    }
+}
+/* END PRESENTACION*/
+
+/* START ABOUT ME */
+@media (max-width: 376px) {
+    /* Para la info y la img */
+    .section-about-me {
+        height: 538px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #141414;
+    }
+}
+
+@media (min-width: 376px) {
+    /* Para la info y la img */
+    .section-about-me {
+        height: 538px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #141414;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-about-me__info {
+        text-align: center;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-about-me__info {
+        text-align: center;
+        order: 1;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-about-me__info__name {
+        margin: 0;
+        color: #FAFAFA;
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -2px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-about-me__info__name {
+        margin: 0;
+        color: #FAFAFA;
+
+        text-align: left;
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-about-me__info__copy {
+        width: 312px;
+        height: 193px;
+        margin-top: 41px;
+        text-align: left;
+        color: #FAFAFA;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-about-me__info__copy {
+        width: 532px;
+        height: 165px;
+        margin-top: 28px;
+
+        color: #FAFAFA;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
+
+@media (max-width: 376px) {
+    .section-about-me__logo {
+        display: block;        
+        width: 80px;
+        height: 80px;
+        margin-bottom: 68px;
+        border: 1px solid #FAFAFA;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-about-me__logo {
+        display: block;        
+        width: 211px;
+        height: 211px;
+        margin-right: 90px;
+        border: 1px solid #FAFAFA;
+    }
+}
+/* END ABOUT ME */
+
+/* START SERVICIOS */
+@media (max-width: 376px) {
+    .section-servicios {
+        height: 1375px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios {
+        position: relative;
+        height: 606px;
+        text-align: center;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-servicios__title {
+        margin: 0;
+        /* padding: 0; */
+        /* No 70 como en el layout pq me queda un restante que no lo puedo quitar con nada: son 10px */
+        margin-top: 60px;
+
+        color: #2C2C2C;
+        font-family: 'Open Sans';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -2px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__title {
+        position: absolute;
+        margin: 0;
+        top: 59px;
+
+        color: #2C2C2C;
+        font-family: 'Open Sans';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+        
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__contenido {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 80px;
+    }
+}    
+
+@media (max-width: 376px) {
+    .section-servicios__servicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 119px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__servicio {
+        width: 270px;
+        height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 120px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-servicios__servicio:nth-child(2) {
+        margin-top: 59px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-servicios__servicio__img {
+        display: block;
+        width: 138px;
+        height: 128px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__servicio__img {
+        display: block;
+        width: 121px;
+        height: 69px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-servicios__servicio__title {
+        margin: 0;
+
+        color: #2C2C2C;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__servicio__title {
+        margin: 0;
+        color: #2C2C2C;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-servicios__servicio__info {
+        color: #2C2C2C;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 376px) {
+    .section-servicios__servicio__info {
+        width: 262px;
+        height: 117px;
+        
+        color: #2C2C2C;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+
+        margin-top: 15px;
+    }
+}
+/* END SERVICIOS*/
+
+/* START FORM MOBILE */
+@media (max-width: 376px) {
+    .section-form {
+        min-height: 100vh;
+        background-color: #141414;
+    }
+
+    .section-form__copy > h2 {
+        margin: 0;
+        padding-top: 70px;
+        padding-bottom: 36px;
+
+        color: #FAFAFA;
+        font-family: 'Open Sans';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+
+    .section-form__form {
+        max-width: 335px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-form__form > * {
+        display: block;
+        /* 335px */
+        width: 100%;
+    }
+
+    .section-form__form label {
+        margin: 9px 0;
+        color: #FAFAFA;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .section-form__form input[type="text"], 
+    .section-form__form input[type="email"] {
+        height: 45px;
+        margin-bottom: 21px;
+        border: 3px solid #2C2C2C;
+    }
+
+    .section-form__form input[type="text"]:hover, 
+    .section-form__form input[type="email"]:hover,
+    .section-form__form textarea:hover {
+        border: 3px solid #8F2BD6;
+        border-radius: 4px;
+    }
+    /* Falta que al seleccionar los input el borde se quede violeta */
+
+    .section-form__form textarea {
+        height: 113px;
+        resize: none;
+        border: 3px solid #2C2C2C;
+    }
+
+    .section-form__form input[type="submit"] {
+        height: 45px;
+        margin-top: 60px;
+        background-color: #FFD953;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+    .section-form__form input[type="submit"]:hover {
+        border: 3px solid #8F2BD6;
+        border-radius: 4px;
+    }
+}
+
+/* FORMULARIO DESKTOP */
+@media (min-width: 376px) {
+    .section-form {
+        min-height: 660px;
+        background-color: #141414;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-form__copy {
+        max-width: 270px;
+        height: 450px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        
+        padding-right: 77px;
+    }
+
+    .section-form__copy > h2 {
+        margin: 0;
+        
+        color: #FAFAFA;
+        font-family: 'Open Sans';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+        text-align: right;
+        
+        text-align: center;
+    }
+    
+    .section-form__form {
+        width: 376px;
+        /* margin: 0 auto; */
+        padding: 116px 0;
+        margin-right: 50px;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .section-form__form > * {
+        display: block;
+        /* 376px */
+        width: 100%;
+    }
+
+    .section-form__form label {
+        margin: 9px 0;
+        color: #FAFAFA;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .section-form__form input[type="text"], 
+    .section-form__form input[type="email"] {
+        height: 45px;
+        margin-bottom: 21px;
+        border: 3px solid #2C2C2C;
+    }
+
+    .section-form__form input[type="text"]:hover, 
+    .section-form__form input[type="email"]:hover,
+    .section-form__form textarea:hover {
+        border: 3px solid #8F2BD6;
+        border-radius: 4px;
+    }
+    /* Falta que al seleccionar los input el borde se quede violeta */
+
+    .section-form__form textarea {
+        height: 113px;
+        resize: none;
+        border: 3px solid #2C2C2C;
+    }
+
+    .section-form__form input[type="submit"] {
+        height: 45px;
+        margin-top: 60px;
+        background-color: #FFD953;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
+    .section-form__form input[type="submit"]:hover {
+        border: 3px solid #8F2BD6;
+        border-radius: 4px;
+    }
+}
+/* END FORMS */
+
+/* END MAIN */
+
+/* START FOOTER */
+@media (max-width: 376px) {
+    .footer {
+        width: 100%;
+        height: 493px;
+        background-color: #D6492B;
+    }
+}
+
+@media (max-width: 376px) {
+    
+}
+/* END FOOTER */
+

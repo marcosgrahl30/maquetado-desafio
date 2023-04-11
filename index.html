@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Mi WEB personal</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo border"></div>
+        <a href="#" class="header-menu">
+            <div class="header-menu__barra border"></div>
+            <div class="header-menu__barra border"></div>
+            <div class="header-menu__barra border"></div>
+        </a>
+        <nav class="header-nav">
+            <a href="#about-me" class="header-nav__link">quién soy</a>
+            <a href="#servicios" class="header-nav__link">servicios</a>
+            <a href="#contacto" class="header-nav__link">escribime</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-presentacion">
+            <h2 class="section-presentacion__copy">Bienvenidos a mi sitio</h2>
+            <img src="" alt="" class="section-presentacion__img border">
+        </section>
+        <section id="about-me" class="section-about-me">
+            <div class="section-about-me__info">
+                <h2 class="section-about-me__info__name">Soy Marcos</h2>
+                <p class="section-about-me__info__copy">
+                    Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. 
+                </p>
+            </div>
+            <img class="section-about-me__logo"></img>
+        </section>
+        <section id="servicios" class="section-servicios">
+            <h2 class="section-servicios__title">Mis servicios</h2>
+            <div class="section-servicios__contenido">
+                <div class="section-servicios__servicio">
+                    <img src="" alt="cosa 1" class="section-servicios__servicio__img border">
+                    <h2 class="section-servicios__servicio__title">Cosa 1</h2>
+                    <p class="section-servicios__servicio__info">
+                        Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                    </p>
+                </div>
+                <div class="section-servicios__servicio">
+                    <img src="" alt="cosa 2" class="section-servicios__servicio__img border">
+                    <h2 class="section-servicios__servicio__title">Cosa 2</h2>
+                    <p class="section-servicios__servicio__copy">
+                        Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                        
+                    </p>
+                </div>
+                <div class="section-servicios__servicio">
+                    <img src="" alt="cosa 3" class="section-servicios__servicio__img border">
+                    <h2 class="section-servicios__servicio__title">Cosa 3</h2>
+                    <p class="section-servicios__servicio__info">
+                        Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section-form">
+            <div class="section-form__copy">
+                <h2>Escribime</h2>
+            </div>
+            <form action="" class="section-form__form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="" placeholder="Escribe tu nombre">
+    
+                <label for="email">Email</label>
+                <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido" required>        
+            
+                <label>Mensaje</label> 
+                <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10" required></textarea>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
